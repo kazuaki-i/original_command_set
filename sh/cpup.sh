@@ -17,7 +17,6 @@ do
   s=`printf %02d $i`
   e=${f##*.}
   g=../_${prefix}_${s}.${e}
-  echo $f $g
-  # cp "${f}" $g
+  cp "${f}" ${g}
   let i++
 done
